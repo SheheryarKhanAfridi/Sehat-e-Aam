@@ -87,6 +87,12 @@ console.log(user,'user data')
               >
                 Home
               </Link>
+              <Link
+                to={'/ContactUs'}
+                className="hover:text-gray-400 lg:p-4 py-2 text-gray-500"
+              >
+                Contact Us
+              </Link>
               <a
                 href="#about"
                 className="hover:text-gray-400 lg:p-4 py-2 text-gray-500"

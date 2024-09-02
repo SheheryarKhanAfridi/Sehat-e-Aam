@@ -7,7 +7,7 @@ const { connectDB } = require("./utils/features");
 const { config } = require("dotenv");
 const cookieParser = require('cookie-parser');
 const jwt = require("jsonwebtoken");
-
+const {getBill} =require('./middleware/sendMail');
 const { errorMiddleware } = require("./middleware/error");
 const TestBook = require('./models/testbook')
 // const userRouter = require("./routes/user");
@@ -633,6 +633,7 @@ app.post('/updateClinicDetailss', async (req, res) => {
   }
 });
 
+
 app.post('/sendReviewForClinic', async (req, res) => {
   const data = req.body;
   try {
@@ -667,6 +668,11 @@ app.post('/sendReviewForClinic', async (req, res) => {
     res.status(500).json({ message: 'Failed to add review', error });
   }
 });
+
+
+app.post('/ContactUs',getBill,(req,res)=>{
+  return res.status(200).json('Email send')
+})
 
 
 

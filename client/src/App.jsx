@@ -34,6 +34,7 @@ import DoctorAppointment from './UI/pages/DoctorsAppointment.jsx';
 import DoctorForm from './UI/pages/DoctorForm.jsx';
 import Header from './UI/components/Header.jsx';
 import Footer from './UI/components/Footer.jsx';
+import ContactUs from './UI/pages/ContactUs.jsx';
 
 
 function App() {
@@ -298,6 +299,7 @@ function App() {
           <Route path='/DoctorsListingForUsers' element={<DoctorsListing/>}/>
           <Route path='/History' element={<UserAppointmentsHistory/>}/>
           <Route path='/DoctorAppointments' element={<DoctorAppointment/>}/>
+          <Route path='/ContactUs' element={<ContactUs/>}/>
           
 
         {/* admin routes end */}
