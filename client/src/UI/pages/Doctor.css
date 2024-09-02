@@ -1,0 +1,300 @@
+.doc{
+  background: white;
+  padding: 0;
+  margin: 0;
+}
+.docimageicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.docform{
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); */
+    padding: 20px;
+}
+.homeicons{
+  width: 70px !important; 
+}
+.docimageicon img{
+    width: 400px;
+    border-radius: 20px;
+}
+.clinicform div input{
+    color: black;
+    font-size: 18px;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+}
+.clinicform div input:focus{
+    border-radius: 10px;
+}
+ 
+.loaderpara{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cardsparent_doctorslist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;padding: 20px;
+}
+.doctorlistshadow{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+
+}
+section.bookappointment {
+    position: relative; 
+    width: 320px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    perspective: 1000px;
+    transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    margin: 20px;
+  }
+  .bookappointment svg {
+    fill: #000;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 3px;
+  }
+  .bookappointment:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px #000000;
+    background-color: #f2f2f2;
+    color: #ffffff;
+  }
+  
+  .card__content {
+    color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .bookappointment:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    padding-left: 5px;
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  .bookappointment:hover img {
+    scale: 1.3;
+    transition: 0.4s;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.4;
+  }
+  .bookappointment h4{
+    font-size: 20px;
+    padding: 10px;
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+  }
+  /* Commands to change the shadows in dark mode
+  @media (prefers-color-scheme: dark) {
+    .card:hover {
+    box-shadow: 0 8px 16px #000000;
+    }
+  }*/
+  .modelbackcustom{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000000ad;
+    backdrop-filter: blur(5px);
+  }
+ 
+  .AppointmentHistoryBtn {
+    margin: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    background: rgb(244 67 54);
+    color: #f5f5f5;
+  }
+  
+  .AppointmentHistoryBtn:hover {
+    box-shadow: 0 0 20px 0px #2e2e2e3a;
+  }
+  
+  .AppointmentHistoryBtn .icon {
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .AppointmentHistoryBtn .text {
+    transform: translateX(55px);
+    font-size: 15px;
+  }
+  
+  .AppointmentHistoryBtn:hover .icon {
+    width: 175px;
+  }
+  
+  .AppointmentHistoryBtn:hover .text {
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+  .AppointmentHistoryBtn:focus {
+    outline: none;
+  }
+  
+  .AppointmentHistoryBtn:active .icon {
+    transform: scale(0.85);
+  }
+  .historybtnappointmnt{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+
+  .appointmentCardHistory p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #666;
+  }
+  
+  .appointmentCardHistory p.small {
+    font-size: 14px;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background-color: #00838d;
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .historycard1 {
+    display: block;
+    position: relative;
+    background-color: #f2f8f9;
+    border-radius: 4px;
+    padding: 32px 24px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+  }
+  .historycard1:hover .CancelAppointmentButton{
+    background: white;
+    color: #000;
+    transition: 0.3s;
+  }
+  .CancelAppointmentButton:hover{
+    scale: 1.1;
+  }
+  .CancelAppointmentButton{
+    border-radius: 5px;
+    padding: 8px 30px;
+    background: #00838d;
+    color: white;
+  }
+  .historycard1:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: #00838d;
+    /* background: grey; */
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+  }
+  .dtaecolorsblack{
+    color: black !important;
+    font-weight: bold !important;
+  }
+  .historycard1:hover:before {
+    transform: scale(31);
+  }
+  
+  .historycard1:hover p {
+    transition: all 0.3s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .historycard1:hover h3 {
+    transition: all 0.3s ease-out;
+    color: #fff;
+  }
+  .cardparenthistory{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly ;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  
+ 
